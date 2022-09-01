@@ -27,6 +27,11 @@ After install with success, you could execute:
 
 When execute `terraform-sh` or `terrafrunt-sh`, you enter in a container with the tools and the actual path folder mapped into de container.
 
+## Uninstall
+```sh
+sudo make uninstall
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
