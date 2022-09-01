@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  terraform:
+    image: 'hashicorp/terraform:1.2.6'
+    volumes:
+      # - ${PWD}:/app
+      - ~/.aws:/root/.aws
+    # environment:
+      # - AWS_PROFILE=${AWS_PROFILE}
+    working_dir: '/app'
+    entrypoint: ""
+  terragrunt:
+    image: 'alpine/terragrunt:1.2.7'
+    volumes:
+      - ${PWD}:/app
+      - ~/.aws:/root/.aws
+    # environment:
+      # - AWS_PROFILE=${AWS_PROFILE}
+    working_dir: '/app'
+    entrypoint: ""
