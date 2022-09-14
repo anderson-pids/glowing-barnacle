@@ -5,6 +5,7 @@ services:
     volumes:
       # - ${PWD}:/app
       - ~/.aws:/root/.aws
+      - ~/.ssh:/root/.ssh
     # environment:
       # - AWS_PROFILE=${AWS_PROFILE}
     working_dir: '/app'
@@ -14,6 +15,7 @@ services:
     volumes:
       - ${PWD}:/app
       - ~/.aws:/root/.aws
+      - ~/.ssh:/root/.ssh
     # environment:
       # - AWS_PROFILE=${AWS_PROFILE}
     working_dir: '/app'
